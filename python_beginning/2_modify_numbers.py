@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-level = 99.9999
-print(f"Learning Python is fun\"' - {str(level)[:5]} %")
-print("Learning Python is fun\"' - {} %".format(str(level)[:5]))
-print("Learning Python is fun\"' - %s" % str(level)[:5], "%")
+level = 3.141592653589793238
+print(f"Learning Python is fun\"' - {round(level,2)} %")
+print("Learning Python is fun\"' - {} %".format(round(level,2)))
+print("Learning Python is fun\"' - %s" % round(level,2), "%")
+
