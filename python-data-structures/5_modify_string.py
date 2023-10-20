@@ -2,6 +2,7 @@
 string = """AbraCadabra
 A new string voila!"""
 
+
 def remove_char(some_string):
     res_str = ''
     for i in some_string:

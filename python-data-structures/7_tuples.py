@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def tuple_addition(first_tuple = (0, 0), second_tuple = (0, 0)):
+def tuple_addition(first_tuple=(0, 0), second_tuple=(0, 0)):
     first_list = list(first_tuple)
     second_list = list(second_tuple)
     while len(first_list) < 2:

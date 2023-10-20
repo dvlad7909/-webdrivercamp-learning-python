@@ -2,7 +2,7 @@
 my_list = [5, 4, 3, 2, 1]
 bool_list = []
 for i in my_list:
-    if int(i)%2 == 0:
+    if int(i) % 2 == 0:
         bool_list.append(True)
     else:
         bool_list.append(False)

@@ -6,6 +6,7 @@ matrix = [
     [7, 8, 9]
 ]
 
+
 def print_matrix(mtrx):
     for row in mtrx:
         for num in row:
