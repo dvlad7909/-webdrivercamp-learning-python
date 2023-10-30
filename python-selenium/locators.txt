@@ -1,0 +1,16 @@
+0 - //header/div/ul/li
+
+1 - //ul[@class="x-refine__left__nav"]/li//h3
+
+2 - //ul[@class="x-refine__left__nav"]/li//h3[text()="Brand"]
+    //ul[@class="x-refine__left__nav"]/li//h3[text()="Color"]
+
+3 - //ul[@class="x-refine__left__nav"]/li//h3[text()="Brand"]/../..//span[text()="adidas"]/../../../span
+    //ul[@class="x-refine__left__nav"]/li//h3[text()="Color"]/../..//span[text()="Blue"]/../../../span
+
+4 - //ul[@class="srp-results srp-grid clearfix"]//li[@data-viewport]//span[@role="heading" and translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz') ='superstar 82 shoes']
+
+5 - //a[text()="My eBay"]/..//li/a
+To pause the page: go to DevTools/Sources press F8 (or CTRL+\) keyboard key when hover over "My eBay" dropdown to pause the script, press F8 (or CTRL+\) one more time to continue.
+
+5* - //span[@class="s-item__price" and contains(text(), '$') and number(substring-before(substring-after(., '$'), '.')) >= 20 and number(substring-before(substring-after(., '$'), '.')) <= 200 and count(ancestor::div[@class="s-item__info clearfix"]//div[@class="x-star-rating"]/*[@class="icon icon--star-filled-16"])=5 and ancestor::div[@class="s-item__info clearfix"]//span[contains(text(),'Free shipping')] and ancestor::div[@class="s-item__info clearfix"]//span[contains(text(), 'off') and number(substring-before(., '%')) >= 20] and ancestor::div[@class="s-item__info clearfix"]//span[@class="s-item__reviews-count"]/span[number(substring-before(substring-after(., '('), ')')) >= 5]]/ancestor::div[@class="s-item__wrapper clearfix"]
